@@ -15,15 +15,9 @@ class Toggle extends React.Component {
   }
 
   render() {
-    const checked = this.state.toggledOn ? 'checked' : '';
     return (
       <div
         style={{
-          //   position: 'relative',
-          //   width: '60px',
-          //   height: '34px',
-          //   marginTop: 'auto',
-          //   marginBottom: 'auto',
           display: 'inline-block'
         }}
       >
@@ -31,7 +25,7 @@ class Toggle extends React.Component {
           <input
             type="checkbox"
             className="input-none"
-            checked={checked}
+            checked={this.state.toggledOn}
             onChange={this.manageClick.bind(this)}
           />
           <span className="slider round" />
