@@ -2,9 +2,11 @@ import React from 'react';
 import './toggle.css';
 
 class Toggle extends React.Component {
+
   state = {
     toggledOn: !!this.props.toggledOn
   };
+
   manageClick(evt) {
     const newState = !this.state.toggledOn;
     this.setState({ toggledOn: newState });
@@ -35,3 +37,5 @@ class Toggle extends React.Component {
 }
 
 export default Toggle;
+
+2 gatitas 2
