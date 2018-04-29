@@ -6,7 +6,6 @@ class Toggle extends React.Component {
     toggledOn: !!this.props.toggledOn
   };
   manageClick(evt) {
-    // console.log('here', evt.target.value); //returns on/off
     const newState = !this.state.toggledOn;
     this.setState({ toggledOn: newState });
     if (this.props.onToggle) {
