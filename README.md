@@ -5,7 +5,7 @@ It just takes two props:
  - toggledOn, toggledOn={true}, toggledOn={false}
  - onToggle={this.onToggle} (or a callback as needed)
  
-## Use:
+## Usage:
 ```
 <Toggle toggledOn={this.state.textEnabled} onToggle={this.onToggle} />
 ```
